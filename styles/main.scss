@@ -1,0 +1,54 @@
+@use "./vendors/normalize";
+@use "./partials/colors";
+.navigation {
+    background-color: colors.$primary-color;
+    padding: 17px;
+    nav {
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: colors.$hover-color;
+            }
+
+        }
+     
+    }
+}
+.main {
+    text-align: center;
+    display: inline-block;
+    section {
+        h1 {
+            font-family: cursive;
+            color: #dc8d31;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            color: #414141;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav {
+            a {
+               color: #db8d33;
+               font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}
+.close {
+       background-color: #414141;
+       color: white;
+       padding: 4px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 10px;
+       margin-top: 24px;
+       display: block;
+    }
+    @media (min-width: 1024px){
+        .close {
+        background-color: #526178;
+       }
+    }
